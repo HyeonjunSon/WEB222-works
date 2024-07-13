@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en-CA">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="YOUR_NAME" />
+    <title>WEB222 Music App</title>
+    <link rel="stylesheet" href="./css/water.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Jun Songs</h1>
+      <p>
+        This song is my favorite Top 20 artist of song.<br />
+        And this song is pretty good for all of us
+      </p>
+    </header>
+    <nav id="menu">
+      <!-- Dynamically create your menu category buttons here -->
+    </nav>
+    <hr />
+    <main>
+      <div id="artist-container">
+        <h2 id="selected-artist"></h2>
+        <div id="artist-links"></div>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Year</th>
+            <th>Duration</th>
+          </tr>
+        </thead>
+        <tbody id="songs">
+          <!-- Dynamically create your product rows here -->
+        </tbody>
+      </table>
+    </main>
+    <script src="./js/artists.js"></script>
+    <script src="./js/songs.js"></script>
+    <!-- Main App JavaScript File -->
+    <script src="./js/app.js"></script>
+  </body>
+</html>
