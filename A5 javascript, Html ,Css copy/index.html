@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en-CA">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="HyeonjunSon" />
+    <title>WEB222 Music App</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+      }
+
+      header {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 0;
+        text-align: center;
+      }
+
+      nav {
+        text-align: center;
+        margin: 10px 0;
+      }
+
+      nav button {
+        background-color: #4caf50;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        margin: 5px;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+
+      nav button:hover {
+        background-color: #45a049;
+      }
+
+      .cards-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        padding: 20px;
+      }
+
+      .card {
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        width: 300px;
+        background-color: white;
+      }
+
+      .card-image {
+        height: 200px;
+        object-fit: cover;
+        width: 100%;
+      }
+
+      .card-content {
+        padding: 15px;
+      }
+
+      .card-title {
+        font-size: 18px;
+        margin: 0 0 10px;
+      }
+
+      .card-year,
+      .card-duration {
+        color: #777;
+      }
+
+      footer {
+        text-align: center;
+        padding: 10px;
+        background-color: #4caf50;
+        color: white;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Jun Songs</h1>
+      <p>
+        This song is my favorite Top 20 artist of song.<br />
+        And this song is pretty good for all of us
+      </p>
+    </header>
+    <nav id="menu">
+      <!-- Dynamically create your menu category buttons here -->
+    </nav>
+    <hr />
+    <main>
+      <div id="artist-container">
+        <h2 id="selected-artist"></h2>
+        <div id="artist-links"></div>
+      </div>
+      <div id="songs-container" class="cards-container">
+        <!-- Dynamically create your product cards here -->
+      </div>
+    </main>
+    <footer>&copy; 2024 Jun Songs. All rights reserved.</footer>
+    <script src="./js/artists.js"></script>
+    <script src="./js/songs.js"></script>
+    <!-- Main App JavaScript File -->
+    <script src="./js/app.js"></script>
+  </body>
+</html>
